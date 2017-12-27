@@ -1,0 +1,29 @@
+.sidebar {
+    background-color: $color-grey-dark-1;
+    flex: 0 0 18%;
+    
+}
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.side-nav {
+    
+    &__item {
+
+    }
+    &__link {
+
+    }
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+}
+.legal {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2.5rem;
+    color: $color-grey-light-4;
+}
