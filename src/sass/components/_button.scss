@@ -1,0 +1,83 @@
+.btn {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: transparent !important;
+    cursor: pointer;
+    &-inline {
+        border: none;
+        color: $color-primary;
+        font-size: inherit;
+        background-color: transparent !important;
+        border-bottom: 1px solid currentColor;  
+        display: inline-block;
+        cursor: pointer;
+        transition: all .2s;
+        & span {
+            margin-left: 3px;
+            transition: all .2s;
+        }
+        &:hover {
+            color: $color-grey-dark-1;
+            span {
+                margin-left: 8px;
+            }
+        }
+        &:focus {
+            outline:none;
+            animation: pulse 1s infinite;
+        }
+      }
+
+      &__visible,
+      &__invisible {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        border-radius: 100px;
+        border: none;
+        background-image: linear-gradient(to right, $color-primary-light-1, $color-primary-dark-1);
+        color: $color-white;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        transition: all .2s;
+        
+      }
+      &__visible {
+        padding: 2rem 7.5rem;
+      }
+      &__invisible {
+        position: absolute;
+        left: 0;
+        top: -100%;
+        padding: 2rem 0;
+      }
+
+      &:hover &__visible {
+        transform: translateY(100%);
+      }
+      &:hover &__invisible {
+          top: 0;
+          background-image: linear-gradient(to left, $color-primary-light-1, $color-primary-dark-1);
+      }
+      &:focus {
+          outline: none;
+          animation: pulse 1s infinite;
+      }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(1.05);
+        @include shadow-dark;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}

@@ -1,3 +1,12 @@
 @mixin shadow-dark {
-    box-shadow: 0 2rm 6rem rgba($color-black, .3);
+    box-shadow: 0 2rem 6rem rgba($color-black, .3);
+}
+@mixin shadow-light {
+    box-shadow: 0 2rem 5rem rgba($color-black, .06);
+}
+@mixin bottom-border {
+    border-bottom: 1px solid $color-grey-light-2;
+}
+@mixin top-border {
+    border-top: 1px solid $color-grey-light-2;
 }
