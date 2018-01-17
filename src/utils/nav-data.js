@@ -12,7 +12,7 @@ export const NavData = [
         svgName: '../images/sprite.svg#icon-key'
     },
     {
-        name: 'Tour',
+        name: 'Booking',
         svgName: '../images/sprite.svg#icon-map'
     }
 
