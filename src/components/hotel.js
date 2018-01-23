@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './header';
 import Main from './main';
 
 
-class Hotel extends Component {
-    render() {
+export default (props) => {
         return(
             <div className="container">
-                <Header />
+                <Header authUser={props.authUser}/>
                 <Main />
             </div>
-        )
+        );
     }
-}
-export default Hotel;

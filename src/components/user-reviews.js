@@ -9,7 +9,7 @@ class UserReviews extends Component {
                 if(ReviewData.indexOf(item)<2) {
                     return <UserReviewItem key={ReviewData.indexOf(item)} name={item.name} image={item.image} text={item.text} date={item.date} rating={item.rating}/>
                 }
-                
+                return false;
             })
         )
     }

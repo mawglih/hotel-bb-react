@@ -24,6 +24,42 @@ body {
   color: #777;
   min-height: 100vh; }
 
+.heading-tertiary-form {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #277552; }
+
+.heading-booking {
+  color: #fff; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -114,7 +150,7 @@ body {
     width: 2.25rem;
     fill: #777; }
   .user-nav__notification {
-    font-size: .8rem;
+    font-size: 1rem;
     height: 1.75rem;
     width: 1.75rem;
     border-radius: 50%;
@@ -126,6 +162,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    .user-nav__notification-login {
+      font-size: 1.2rem;
+      background-color: #277552;
+      color: #fff;
+      position: absolute;
+      top: 1rem;
+      right: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .user-nav__notification-logout {
+      font-size: 1.2rem;
+      background-color: #aa5739;
+      color: #fff;
+      position: absolute;
+      top: 1rem;
+      right: -1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%;
@@ -489,3 +545,93 @@ body {
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 2.5rem; }
+
+.signin {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  width: 40%;
+  height: 25vh;
+  margin-top: 10vh;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(./images/hotel1.jpg);
+  background-size: cover; }
+
+.signup {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  width: 80%;
+  height: 65vh;
+  margin-top: 10vh;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(./images/hotel3.jpg);
+  background-size: cover; }
+  .signup__page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; }
+  .signup__form {
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .3s; }
+    .signup__form-input {
+      font-size: 1.5rem;
+      font-family: inherit;
+      color: inherit;
+      margin-bottom: 1rem;
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 1px solid #277552;
+      width: 90%;
+      display: block;
+      transition: all .3s; }
+    .signup__form-photo {
+      font-size: 2rem;
+      font-family: inherit;
+      color: #277552;
+      margin-bottom: 1rem;
+      padding: 2rem  2.5rem 1.5rem 0;
+      width: 90%;
+      display: block;
+      transition: all .3s; }
+    .signup__form-label {
+      font-size: 1.6rem;
+      color: #277552; }
+    .signup__form-button, .signup__form-button:link, .signup__form-button:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      border-radius: 100px;
+      transition: all .2s;
+      position: relative;
+      font-size: 1.6rem;
+      border: none;
+      cursor: pointer;
+      background-color: #277552;
+      color: #fff; }
+    .signup__form-button:hover {
+      transform: translateY(3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+      .signup__form-button:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+    .signup__form-button:active, .signup__form-button:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  .signup__link {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    text-align: center; }
+  .signup__block {
+    display: flex;
+    justify-content: space-between; }
